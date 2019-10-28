@@ -6,9 +6,13 @@ spring:
       server:
         git:
           uri: https://github.com/yestarz/springcloud-config-repo.git
+  redis:
+    port: 6379
+    host: 116.196.118.178
 eureka:
   client:
     service-url:
       defaultZone : http://localhost:8761/eureka
 server:
   port: 8082
+

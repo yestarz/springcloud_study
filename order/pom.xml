@@ -5,11 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>link.yangxin</groupId>
-    <artifactId>product</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
-    <name>product</name>
+    <artifactId>order</artifactId>
     <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -23,7 +21,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.M2</spring-cloud.version>
-        <product-common.version>1.0-SNAPSHOT</product-common.version>
+        <order-common.version>1.0-SNAPSHOT</order-common.version>
+        <product-api.version>1.0-SNAPSHOT</product-api.version>
     </properties>
 
     <dependencyManagement>
@@ -41,15 +40,12 @@
                 <version>2.0.0.M3</version>
             </dependency>
         </dependencies>
-
     </dependencyManagement>
 
     <modules>
-        <module>product-server</module>
-        <module>product-common</module>
-        <module>product-api</module>
+        <module>server</module>
+        <module>order-common</module>
     </modules>
-
 
     <repositories>
         <repository>
@@ -88,5 +84,6 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+
 
 </project>

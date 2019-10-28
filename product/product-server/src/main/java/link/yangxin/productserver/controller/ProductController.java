@@ -2,11 +2,10 @@ package link.yangxin.productserver.controller;
 
 import link.yangxin.my.commons.R;
 import link.yangxin.my.commons.controller.BaseController;
+import link.yangxin.product.common.vo.ProductInfoVO;
 import link.yangxin.product.common.vo.ProductVO;
 import link.yangxin.productserver.service.ProductInfoService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -25,6 +24,11 @@ public class ProductController extends BaseController {
     @GetMapping("/list")
     public R<List<ProductVO>> list() {
         return success(productInfoService.listProduct());
+    }
+
+    @PostMapping("/listForProductId")
+    public R<List<ProductInfoVO>> listForProductId(@RequestBody List<String> list) {
+        return success(productInfoService.listForProductId(list));
     }
 
 }

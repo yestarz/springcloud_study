@@ -1,5 +1,7 @@
 package link.yangxin.productserver.service;
 
+import link.yangxin.my.commons.R;
+import link.yangxin.product.common.vo.ProductInfoVO;
 import link.yangxin.product.common.vo.ProductVO;
 import link.yangxin.productserver.entity.ProductInfo;
 
@@ -13,4 +15,5 @@ public interface ProductInfoService {
 
      List<ProductVO> listProduct();
 
+    List<ProductInfoVO> listForProductId(List<String> list);
 }

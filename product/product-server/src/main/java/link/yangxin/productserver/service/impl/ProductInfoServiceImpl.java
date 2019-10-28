@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 /**
@@ -54,5 +55,20 @@ public class ProductInfoServiceImpl implements ProductInfoService {
         }
 
         return voList;
+    }
+
+    @Override
+    public List<ProductInfoVO> listForProductId(List<String> list) {
+        List<ProductInfoVO> results = new ArrayList<>();
+        for (String s : list) {
+            Optional<ProductInfo> optional = productInfoRepository.findById(s);
+            if (optional.isPresent()) {
+                ProductInfo productInfo = optional.get();
+                ProductInfoVO productInfoVO = new ProductInfoVO();
+                BeanUtils.copyProperties(productInfo, productInfoVO);
+                results.add(productInfoVO);
+            }
+        }
+        return results;
     }
 }

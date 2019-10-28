@@ -9,5 +9,8 @@ import org.springframework.stereotype.Repository;
  * @date 2019/10/28
  */
 @Repository
-public interface OrderDao extends JpaRepository<OrderDetail,String> {
+public interface OrderDetailDao extends JpaRepository<OrderDetail, String> {
+
+
+
 }

@@ -1,0 +1,11 @@
+POST http://localhost:8080/product/decreaseStock
+Content-Type: application/json
+
+[
+ {
+  "productId": "",
+  "productQuantity":100
+ }
+]
+
+###

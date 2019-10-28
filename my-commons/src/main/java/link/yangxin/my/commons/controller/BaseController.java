@@ -12,6 +12,11 @@ public class BaseController {
         return R.success(t);
     }
 
+    protected <T> R<T> success() {
+        return R.success();
+    }
+
+
     protected <T> R<T> fail(String message) {
         return R.fail(message);
     }

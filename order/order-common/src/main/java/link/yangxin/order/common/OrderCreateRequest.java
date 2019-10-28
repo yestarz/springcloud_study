@@ -18,6 +18,8 @@ public class OrderCreateRequest implements Serializable {
 
     private String openid;
 
+    private String address;
+
     private List<OrderItems> items;
 
 }

@@ -14,6 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableEurekaClient
 @ComponentScan(value = "link.yangxin")
 @EnableFeignClients(value = "link.yangxin.product.api")
+
 public class OrderApplication {
 
     public static void main(String[] args) {

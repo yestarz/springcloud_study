@@ -1,5 +1,7 @@
 package link.yangxin.productserver.service.impl;
 
+import link.yangxin.my.commons.exceptions.BusinessException;
+import link.yangxin.product.common.DecreaseStockInput;
 import link.yangxin.product.common.enums.ProductStatusEnum;
 import link.yangxin.product.common.vo.ProductInfoVO;
 import link.yangxin.product.common.vo.ProductVO;
@@ -10,9 +12,11 @@ import link.yangxin.productserver.entity.ProductInfo;
 import link.yangxin.productserver.service.ProductInfoService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -70,5 +74,25 @@ public class ProductInfoServiceImpl implements ProductInfoService {
             }
         }
         return results;
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public void decreaseStock(List<DecreaseStockInput> inputList) {
+        for (DecreaseStockInput input : inputList) {
+            String productId = input.getProductId();
+            Optional<ProductInfo> optional = productInfoRepository.findById(productId);
+            if (!optional.isPresent()) {
+                throw new BusinessException("商品不存在");
+            }
+            ProductInfo productInfo = optional.get();
+            Integer result = productInfo.getProductStock() - input.getProductQuantity();
+            if (result < 0) {
+                throw new BusinessException("库存不足");
+            }
+            productInfo.setProductStock(result);
+            productInfo.setUpdateTime(new Date());
+            productInfoRepository.save(productInfo);
+        }
     }
 }

@@ -1,4 +1,4 @@
-FROM hub.c.163.com/libary/java:8-alpine
+FROM hub.c.163.com/library/java:8-alpine
 
 ADD target/eureka-0.0.1-SNAPSHOT.jar eureka.jar
 

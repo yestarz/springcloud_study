@@ -17,7 +17,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone : http://localhost:8761/eureka/
+      defaultZone : http://116.196.118.178:8761/eureka/
 
 idworker:
   workerId: 1

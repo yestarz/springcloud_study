@@ -9,6 +9,17 @@ spring:
 
       profile: dev
 
+## 在多节点部署的情况下，进行消息分组，可以避免同一个消息被其他节点同时接受.
+## 把服务放在这个组里面，无论启动多少个实例，消息只会被其中一个实例消费
+    stream:
+      bindings:
+        myMessage :
+          group : order
+          ## 指定这个配置，可以在mq接受或发送对象的时候，自动将消息转成json
+          content-type: application/json
+  redis:
+    host: 116.196.118.178
+    port: 6379
 
 eureka:
   client:

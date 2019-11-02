@@ -6,19 +6,22 @@ spring:
       server:
         git:
           uri: https://github.com/yestarz/springcloud-config-repo.git
-  redis:
-    port: 6379
+  rabbitmq:
     host: 116.196.118.178
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     service-url:
       defaultZone : http://116.196.118.178:8761/eureka
   instance:
     prefer-ip-address: true
-    ip-address: 116.196.118.178
-    non-secure-port: ${server.port}
+    #ip-address: 116.196.118.178
+    #non-secure-port: ${server.port}
 server:
   port: 8082
+
 
 
 

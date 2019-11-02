@@ -1,5 +1,6 @@
 package link.yangxin.productserver.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import link.yangxin.my.commons.exceptions.BusinessException;
 import link.yangxin.product.common.DecreaseStockInput;
 import link.yangxin.product.common.enums.ProductStatusEnum;
@@ -10,6 +11,7 @@ import link.yangxin.productserver.dao.ProductInfoRepository;
 import link.yangxin.productserver.entity.ProductCategory;
 import link.yangxin.productserver.entity.ProductInfo;
 import link.yangxin.productserver.service.ProductInfoService;
+import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -33,6 +35,9 @@ public class ProductInfoServiceImpl implements ProductInfoService {
 
     @Resource
     private ProductCategoryRepository productCategoryRepository;
+
+    @Resource
+    private AmqpTemplate amqpTemplate;
 
     @Override
     public List<ProductVO> listProduct() {
@@ -93,6 +98,12 @@ public class ProductInfoServiceImpl implements ProductInfoService {
             productInfo.setProductStock(result);
             productInfo.setUpdateTime(new Date());
             productInfoRepository.save(productInfo);
+
+            ProductInfoVO productInfoVO = new ProductInfoVO();
+            BeanUtils.copyProperties(productInfo,productInfoVO);
+
+            // 发送mq消息,注意要创建队列
+            amqpTemplate.convertAndSend("productInfo", JSON.toJSONString(productInfoVO));
         }
     }
 }

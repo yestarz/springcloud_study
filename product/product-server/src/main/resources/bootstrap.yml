@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: product
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+
+      profile: dev
+  rabbitmq:
+    host: 116.196.118.178
+    username: guest
+    password: guest
+    port: 5672
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone : http://116.196.118.178:8761/eureka/
+

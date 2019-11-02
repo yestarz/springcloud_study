@@ -47,7 +47,7 @@ public class OrderApplicationTest {
 
         OrderItems orderItems = new OrderItems();
         orderItems.setProductId("157875196366160022");
-        orderItems.setProductQuantity(50);
+        orderItems.setProductQuantity(1);
 
         request.setItems(Arrays.asList(orderItems));
 

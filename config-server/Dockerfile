@@ -1,4 +1,4 @@
-FROM hub.c.163.com/library/openjdk-8-alpine
+FROM hub.c.163.com/library/java:8-alpine
 
 MAINTAINER yangxin
 

@@ -16,7 +16,7 @@ eureka:
   instance:
     prefer-ip-address: true
     ip-address: 116.196.118.178
-    non-secure-port: 8761
+    non-secure-port: ${server.port}
 server:
   port: 8082
 

@@ -6,7 +6,9 @@ spring:
       discovery:
         enabled: true
         service-id: config-server
+
       profile: dev
+
 
 eureka:
   client:

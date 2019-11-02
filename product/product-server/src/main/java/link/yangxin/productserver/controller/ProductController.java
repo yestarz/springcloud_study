@@ -6,9 +6,13 @@ import link.yangxin.product.common.DecreaseStockInput;
 import link.yangxin.product.common.vo.ProductInfoVO;
 import link.yangxin.product.common.vo.ProductVO;
 import link.yangxin.productserver.service.ProductInfoService;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -17,13 +21,23 @@ import java.util.List;
  */
 @RequestMapping("/product")
 @RestController
+@Slf4j
 public class ProductController extends BaseController {
 
     @Resource
     private ProductInfoService productInfoService;
 
+    @Autowired
+    private HttpServletRequest servletRequest;
+
     @GetMapping("/list")
     public R<List<ProductVO>> list() {
+        Cookie[] cookies = servletRequest.getCookies();
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                log.info("cookie .key is :{} ,value is :{}", cookie.getName(), cookie.getValue());
+            }
+        }
         return success(productInfoService.listProduct());
     }
 

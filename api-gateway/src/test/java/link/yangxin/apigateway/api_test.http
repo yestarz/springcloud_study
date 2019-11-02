@@ -1,0 +1,44 @@
+GET  http://localhost:8080/product/list
+
+###
+
+## 第一个product是应用的名字
+GET http://localhost:9000/product/product/list
+
+###
+
+GET http://localhost:9000/config-server/order-dev.yml
+
+
+###
+
+GET http://116.196.118.178:8082/order-dev.yml
+
+###
+
+GET http://localhost:9000/myProduct/product/list
+
+###
+
+## 测试几个Post请求
+POST http://localhost:8080/product/listForProductId
+Content-Type: application/json
+
+["157875196366160022","157875227953464068"]
+
+###
+
+POST http://localhost:9000/product/product/listForProductId
+Content-Type: application/json
+
+
+["157875196366160022","157875227953464068"]
+
+###
+
+## 来一个带cookie访问的：
+
+GET http://localhost:9000/myProduct1/product/list
+Cookie: name=123
+
+###

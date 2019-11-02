@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+      profile: dev
+
+eureka:
+  client:
+    service-url:
+      defaultZone : http://116.196.118.178:8761/eureka/
+
+
+zuul:
+  routes:
+    myProduct:
+      path: /myProduct1/**
+      serviceId: product
+      sensitiveHeaders:
+    product: /myProduct2/**
+  ignored-patterns:
+    - /**/product/listForProductId
+
+
+
+management:
+  security:
+    enabled: false

@@ -42,3 +42,10 @@ GET http://localhost:9000/myProduct1/product/list
 Cookie: name=123
 
 ###
+
+## 必须带token来访问：
+
+GET http://localhost:9000/myProduct1/product/list?token=111111
+
+
+###

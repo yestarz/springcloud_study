@@ -27,3 +27,23 @@ eureka:
       defaultZone : http://116.196.118.178:8761/eureka/
 server:
   port: 8081
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
+    getProductListYml:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 100
+
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  context-path: /

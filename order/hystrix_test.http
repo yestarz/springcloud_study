@@ -1,0 +1,21 @@
+GET http://localhost:8081/hystrix/getProductList
+
+###
+
+### 测试服务熔断
+GET http://localhost:8081/hystrix/getProductList2?number=1
+
+###
+GET http://localhost:8081/hystrix/getProductList2?number=2
+
+###
+
+## 测试通过配置文件配置超时时间
+GET http://localhost:8081/hystrix/getProductListYml
+
+###
+
+## 测试feign降级
+GET http://localhost:8081/hystrix/testFeign
+
+###

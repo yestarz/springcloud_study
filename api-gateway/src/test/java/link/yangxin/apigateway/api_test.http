@@ -49,3 +49,43 @@ GET http://localhost:9000/myProduct1/product/list?token=111111
 
 
 ###
+
+## 买家登陆：
+
+GET http://localhost:9000/user/user/login/buyerLogin?openId=abc
+
+###
+
+## 卖家登陆：
+GET http://localhost:9000/user/user/login/sellerLogin?openId=xyz
+
+###
+
+# 订单创建
+
+POST http://localhost:9000/order/order/create
+Content-Type: application/json
+Cookie: openid=abc
+
+{
+  "name": "杨鑫",
+  "phone": "18580090476",
+  "openid": "abc",
+  "address": "重庆市",
+  "items": [
+    {
+      "productId": "157875196366160022",
+      "productQuantity": 1
+    }
+  ]
+}
+
+###
+
+# 订单完结
+
+POST http://localhost:9000/order/order/finish?orderId=O9126925371319787520
+Content-Type: application/json
+Cookie: token=256fbfbe-d937-408f-a90b-d36204107ca0
+
+###

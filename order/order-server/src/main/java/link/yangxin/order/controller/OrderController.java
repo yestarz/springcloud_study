@@ -28,4 +28,10 @@ public class OrderController extends BaseController {
         return success(s);
     }
 
+    @PostMapping("/finish")
+    public R<Void> orderFinish(String orderId) {
+        orderService.finishOrder(orderId);
+        return success();
+    }
+
 }

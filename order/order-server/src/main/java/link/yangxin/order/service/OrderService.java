@@ -10,4 +10,11 @@ public interface OrderService {
 
     String create(OrderCreateRequest request);
 
+    /**
+     * 完结订单，只能卖家操作
+     *
+     * @param orderId
+     */
+    void finishOrder(String orderId);
+
 }

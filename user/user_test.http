@@ -1,0 +1,13 @@
+### 买家登陆
+
+GET http://localhost:8084/user/login/buyerLogin?openId=abc
+
+###
+### 卖家登陆
+
+GET http://localhost:8084/user/login/sellerLogin?openId=xyz
+Cookie: token=9361e3b9-0a67-4721-9d0c-16cf599988e02
+
+###
+
+

@@ -37,7 +37,7 @@ public class TokenFilter extends ZuulFilter {
 
     @Override
     public Object run() {
-        log.info("=======  pre filter ====== ");
+       /* log.info("=======  pre filter ====== ");
         RequestContext currentContext = RequestContext.getCurrentContext();
         HttpServletRequest request = currentContext.getRequest();
         // 从参数里面获取token，也可以从header、cookie中获取
@@ -45,7 +45,7 @@ public class TokenFilter extends ZuulFilter {
         if (StringUtils.isBlank(token)) {
             currentContext.setSendZuulResponse(false);
             currentContext.setResponseStatusCode(HttpStatus.UNAUTHORIZED.value());
-        }
+        }*/
         return null;
     }
 }

@@ -2,6 +2,7 @@ package link.yangxin.order.service.impl;
 
 import link.yangxin.my.commons.IdWorker;
 import link.yangxin.my.commons.R;
+import link.yangxin.my.commons.exceptions.BusinessException;
 import link.yangxin.order.common.OrderCreateRequest;
 import link.yangxin.order.common.OrderItems;
 import link.yangxin.order.common.enums.OrderStatusEnum;
@@ -22,6 +23,7 @@ import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 /**
@@ -65,7 +67,7 @@ public class OrderServiceImpl implements OrderService {
         for (OrderItems item : items) {
             for (ProductInfoVO vo : productList) {
                 if (!item.getProductId().equals(vo.getProductId())) {
-                   continue;
+                    continue;
                 }
                 total = total.add(vo.getProductPrice().multiply(new BigDecimal(String.valueOf(item.getProductQuantity()))));
 
@@ -103,5 +105,20 @@ public class OrderServiceImpl implements OrderService {
         }
 
         return orderId;
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public void finishOrder(String orderId) {
+        Optional<OrderMaster> optional = orderMasterDao.findById(orderId);
+        if (!optional.isPresent()) {
+            throw new BusinessException("订单不存在");
+        }
+        OrderMaster orderMaster = optional.get();
+        if (!orderMaster.getOrderStatus().equals(OrderStatusEnum.NEW.getCode())) {
+            throw new BusinessException("此时订单状态不能完结");
+        }
+        orderMaster.setOrderStatus(OrderStatusEnum.FINISHED.getCode());
+        orderMasterDao.save(orderMaster);
     }
 }

@@ -89,3 +89,9 @@ zuul:
       ##  主要是下面这部分代码,设置为null
       sensitiveHeaders:
 ```
+
+
+## 忽略全部服务的敏感头：
+```yaml
+zuul.sensitive-headers= 
+```

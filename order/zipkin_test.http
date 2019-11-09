@@ -1,0 +1,17 @@
+POST http://localhost:8081/order/create
+Content-Type: application/json
+
+{
+  "name": "杨鑫",
+  "phone": "18580090476",
+  "openid": "123123123",
+  "address": "重庆",
+  "items": [
+    {
+      "productId": "157875196366160022",
+      "productQuantity": 1
+    }
+  ]
+}
+
+###

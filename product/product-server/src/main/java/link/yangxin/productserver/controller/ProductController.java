@@ -43,11 +43,6 @@ public class ProductController extends BaseController {
 
     @PostMapping("/listForProductId")
     public R<List<ProductInfoVO>> listForProductId(@RequestBody List<String> list) {
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         return success(productInfoService.listForProductId(list));
     }
 

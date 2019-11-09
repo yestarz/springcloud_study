@@ -4,6 +4,6 @@ MAINTAINER yangxin
 
 ADD /target/*.jar config-server.jar
 
-EXPOSE 8082
+EXPOSE 8080
 
 ENTRYPOINT ["java","-jar","/config-server.jar"]

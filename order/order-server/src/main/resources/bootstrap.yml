@@ -32,7 +32,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone : http://116.196.118.178:8761/eureka/
+      defaultZone : http://127.0.0.1:8761/eureka/
 server:
   port: 8081
 
@@ -58,4 +58,5 @@ management:
 
 logging:
   level:
-    org.springframework.cloud.netflix.feign: debug
+    org.springframework.cloud.openfeign: debug
+    org.springframework.cloud.bus: debug

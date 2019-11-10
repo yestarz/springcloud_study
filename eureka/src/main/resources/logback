@@ -1,0 +1,21 @@
+<configuration>
+
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>
+                %d - %msg%n
+            </pattern>
+        </layout>
+    </appender>
+
+    <appender name="GELF" class="de.siegmar.logbackgelf.GelfUdpAppender">
+        <graylogHost>192.168.3.15</graylogHost>
+        <graylogPort>12201</graylogPort>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="GELF" />
+        <appender-ref ref="Console" />
+    </root>
+
+</configuration>

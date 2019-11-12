@@ -2,7 +2,7 @@ FROM hub.c.163.com/library/java:8-alpine
 
 MAINTAINER yangxinxin
 
-CMD ["pkg.sh"]
+RUN ["pkg.sh"]
 
 ADD /target/*.jar client-test.jar
 

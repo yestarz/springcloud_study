@@ -1,0 +1,1 @@
+docker login --username=18580090476 registry.cn-hangzhou.aliyuncs.com

@@ -5,27 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="234fc4c7-cdab-487a-9635-652ee177b07b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../eureka/src/main/resources/logback" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/config_test.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/graylog.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/order-server/src/main/java/link/yangxin/order/config/GirlConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order/order-server/src/main/java/link/yangxin/order/controller/GirlController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eureka/src/main/resources/application-eureka1.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eureka/src/main/resources/application-eureka2.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order/order-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order/order-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order/order-server/src/main/java/link/yangxin/order/OrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order/order-server/src/main/java/link/yangxin/order/OrderApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order/order-server/src/main/java/link/yangxin/order/message/StreamClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order/order-server/src/main/java/link/yangxin/order/message/StreamClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eureka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../order/order-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../order/order-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-api/src/main/java/link/yangxin/product/api/ProductApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-api/src/main/java/link/yangxin/product/api/ProductApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-server/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,48 +28,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="38" column="60" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/product-api/src/main/java/link/yangxin/product/api/ProductApi.java">
+        <entry file="file://$PROJECT_DIR$/product-server/src/main/resources/bootstrap.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+            <state relative-caret-position="459">
+              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/product-server/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="57" column="64" selection-start-line="57" selection-start-column="64" selection-end-line="57" selection-end-column="64" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/product-api/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-core/2.0.0.RELEASE/spring-cloud-netflix-core-2.0.0.RELEASE.pom">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -124,9 +75,9 @@
         <option value="$PROJECT_DIR$/product-server/pom.xml" />
         <option value="$PROJECT_DIR$/product-server/src/main/java/link/yangxin/productserver/controller/ProductController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/product-server/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/product-api/pom.xml" />
         <option value="$PROJECT_DIR$/product-api/src/main/java/link/yangxin/product/api/ProductApi.java" />
+        <option value="$PROJECT_DIR$/product-server/src/main/resources/bootstrap.yml" />
       </list>
     </option>
   </component>
@@ -153,7 +104,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -173,52 +124,6 @@
             <path>
               <item name="product" type="b2602c69:ProjectViewProjectNode" />
               <item name="product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="product" type="b2602c69:ProjectViewProjectNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="product" type="b2602c69:ProjectViewProjectNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="product" type="b2602c69:ProjectViewProjectNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="product" type="b2602c69:ProjectViewProjectNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="product" type="b2602c69:ProjectViewProjectNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="product" type="b2602c69:ProjectViewProjectNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="product" type="b2602c69:ProjectViewProjectNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="product" type="b2602c69:ProjectViewProjectNode" />
@@ -246,30 +151,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="product" type="b2602c69:ProjectViewProjectNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="product" type="b2602c69:ProjectViewProjectNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="product" type="b2602c69:ProjectViewProjectNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-              <item name="product-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="productserver" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -286,7 +167,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573355359258" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573562697608" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -432,6 +313,7 @@
       <workItem from="1573267078110" duration="2460000" />
       <workItem from="1573278026461" duration="573000" />
       <workItem from="1573346065886" duration="1968000" />
+      <workItem from="1573562365076" duration="331000" />
     </task>
     <task id="LOCAL-00001" summary="order">
       <created>1572238473826</created>
@@ -451,12 +333,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33271000" />
+    <option name="totallyTimeSpent" value="33602000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26545843" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26812366" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -467,7 +350,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4017857" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.52901787" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.52901787" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -483,7 +366,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.3128998" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3128998" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -759,16 +642,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product-server/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="44">
+        <state relative-caret-position="1292">
           <caret line="38" column="60" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
         </state>
       </provider>
@@ -776,8 +652,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
+        <state relative-caret-position="1938">
           <caret line="57" column="64" selection-start-line="57" selection-start-column="64" selection-end-line="57" selection-end-column="64" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
@@ -785,18 +669,17 @@
     <entry file="file://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-core/2.0.0.RELEASE/spring-cloud-netflix-core-2.0.0.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/product-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/product-api/src/main/java/link/yangxin/product/api/ProductApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+        <state relative-caret-position="63">
+          <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product-server/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
         </state>
       </provider>
     </entry>

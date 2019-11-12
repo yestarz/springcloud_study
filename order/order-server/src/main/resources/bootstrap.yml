@@ -26,15 +26,16 @@ spring:
       type: web
   sleuth:
     sampler:
-      percentage: 1
-
-
+      probability: 1
 eureka:
   client:
     service-url:
-      defaultZone : http://127.0.0.1:8761/eureka/
+      defaultZone : http://eureka1:8761/eureka/,http://eureka2:8762/eureka/
+  instance:
+    prefer-ip-address: true
 server:
   port: 8081
+
 
 hystrix:
   command:

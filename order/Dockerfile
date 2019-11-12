@@ -6,4 +6,4 @@ ADD /order-server/target/*.jar order.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java","-jar","/product.jar"]
+ENTRYPOINT ["java","-jar","/order.jar"]

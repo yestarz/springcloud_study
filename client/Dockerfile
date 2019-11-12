@@ -2,7 +2,7 @@ FROM hub.c.163.com/library/java:8-alpine
 
 MAINTAINER yangxinxin
 
-RUN ["pkg.sh"]
+CMD ["mvn","clean","package","install","-Dmaven.test.skip=true"]
 
 ADD /target/*.jar client-test.jar
 

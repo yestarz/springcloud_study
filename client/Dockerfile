@@ -3,7 +3,7 @@ FROM hub.c.163.com/library/maven:3
 
 MAINTAINER yangxinxin
 
-COPY /* /client
+COPY / /client
 
 WORKDIR /client
 

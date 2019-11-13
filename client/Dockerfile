@@ -11,4 +11,8 @@ RUN mvn clean package install -Dmaven.test.skip=true
 
 EXPOSE 8080
 
-ENTRYPOINT ["java","-jar","/client-test.jar"]
+WORKDIR /client/target
+
+RUN mv *.jar client.jar
+
+ENTRYPOINT ["java","-jar","/client.jar"]

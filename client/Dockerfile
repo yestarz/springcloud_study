@@ -15,4 +15,4 @@ WORKDIR /client/target
 
 RUN mv *.jar client.jar
 
-ENTRYPOINT ["java","-jar","/client.jar"]
+ENTRYPOINT ["java","-jar","client.jar"]

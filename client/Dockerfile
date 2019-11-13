@@ -3,9 +3,11 @@ FROM hub.c.163.com/library/maven:3
 
 MAINTAINER yangxinxin
 
-RUN mvn clean package install -Dmaven.test.skip=true
+COPY /* /client
 
-ADD /target/*.jar client-test.jar
+WORKDIR /client
+
+RUN mvn clean package install -Dmaven.test.skip=true
 
 EXPOSE 8080
 

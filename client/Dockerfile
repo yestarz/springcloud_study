@@ -1,4 +1,5 @@
 FROM hub.c.163.com/library/java:8-alpine
+FROM hub.c.163.com/library/maven:3
 
 MAINTAINER yangxinxin
 
